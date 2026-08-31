@@ -13,7 +13,7 @@ To use code from the BSP, simply include a reference to `cybsp.h`.
 ### Kit Features:
 
 * Supports USB PD DRP operation on both the USB-C ports.
-* Supports SPR (Standard Power Range) in source mode and can provide upto 100W (20V@3A) on both ports.
+* Supports SPR (Standard Power Range) in source mode and can provide upto 100W (20V@5A) on both ports.
 * Supports EPR (Extended Power Range) in sink mode up to 140W (28V@5A) power on both ports.
 * Support for two self-capacitance based CAPSENSE™ buttons and one 5-segment slider.
 * Kit can be powered from either an external DC adapter (24V) or from USB-C Bus power. 
@@ -60,12 +60,12 @@ See the [BSP API Reference Manual][api] for the complete list of the provided in
 ## More information
 * [EVAL_PMG1_S3_DUALDRP BSP API Reference Manual][api]
 * [EVAL_PMG1_S3_DUALDRP Documentation](https://www.infineon.com/EVAL_PMG1_S3_DUALDRP)
-* [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
+* [Infineon Technologies AG](http://www.infineon.com)
 * [Infineon GitHub](https://github.com/infineon)
-* [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
+* [ModusToolbox™](https://www.infineon.com/design-resources/development-tools/sdk/modustoolbox-software)
 
 [api]: https://infineon.github.io/TARGET_EVAL_PMG1_S3_DUALDRP/html/modules.html
 [settings]: https://infineon.github.io/TARGET_EVAL_PMG1_S3_DUALDRP/html/md_bsp_settings.html
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2024.
+© Infineon Technologies AG or an affiliate of Infineon Technologies AG, 2024-2026.

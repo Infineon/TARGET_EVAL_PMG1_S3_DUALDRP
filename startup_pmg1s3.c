@@ -1,26 +1,27 @@
 /******************************************************************************
  * @file     startup_pmg1s3.c
  * @brief    CMSIS-Core(M) Device Startup File for Category 2 device
- * @version  V2.0.0
- * @date     20. May 2019
+ * @version  V2.1.0
+ * @date     10. June 2024
  ******************************************************************************/
 /*
- * Copyright (c) 2009-2019 Arm Limited. All rights reserved.
+ * Copyright (c) 2009-2026 Arm Limited. All rights reserved.
  *
- * (c) (2019-2023), Cypress Semiconductor Corporation (an Infineon company) or
- * an affiliate of Cypress Semiconductor Corporation.
+ * \copyright
+ * (c) 2009-2026, Infineon Technologies AG or an affiliate of
+ * Infineon Technologies AG.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
- * Licensed under the Apache License, Version 2.0 (the License); you may
- * not use this file except in compliance with the License.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an AS IS BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
@@ -214,12 +215,15 @@ int __low_level_init(void)
  *----------------------------------------------------------------------------*/
 void Reset_Handler(void)
 {
+#if defined(SFLASH_AUTO_SFLASH)
+    Cy_BootStatus();
+#endif /* SFLASH_AUTO_SFLASH */
     Cy_OnResetUser();
 
     /* CMSIS System Initialization */
     SystemInit();
 
-    /* Copy vector table from ROM to RAM*/
+    /* Copy vector table from ROM to RAM */
     memcpy(__RAM_VECTOR_TABLE, __VECTOR_TABLE, CY_VECTOR_TABLE_SIZE_BYTES);
 
     /* Set vector table offset */
@@ -271,5 +275,27 @@ __WEAK void Cy_OnResetUser(void)
     * global variables with CPU frequency are initialized properly.
     */
 }
+
+#if defined(SFLASH_AUTO_SFLASH)
+/*----------------------------------------------------------------------------
+  Default Handler for Boot-Up Status
+
+ \note Applicable to PSoC4 HVMS/PA only.
+ *----------------------------------------------------------------------------*/
+__WEAK void Cy_BootStatus(void)
+{
+    /* This function has the WEAK option, so the user can redefine the function
+    * behavior for a custom processing.
+    * For example, the function redefinition could be constructed from Boot
+    * Result processing and NVIC_SystemReset() function call. */
+    if (0UL != Cy_SysLib_GetBootStatus())
+    {
+        /* To get additional information from BOOT_RESULT registers call \ref Cy_SysLib_GetBootResult() */
+
+        /* Complete an operation here when a boot error */
+        while(true) {}
+    }
+}
+#endif /* SFLASH_AUTO_SFLASH */
 
 /* [] END OF FILE */

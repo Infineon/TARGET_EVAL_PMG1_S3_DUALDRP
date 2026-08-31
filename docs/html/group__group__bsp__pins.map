@@ -1,0 +1,5 @@
+<map id="Pin Mappings" name="Pin Mappings">
+<area shape="rect" id="node1" title="Macro definitions for common peripheral pins on the board." alt="" coords="5,31,115,56"/>
+<area shape="rect" id="node2" href="$group__group__bsp__pins__comm.html" title="Pins associated with connections on the board for communication interfaces (UART/I2C/SPI/...." alt="" coords="163,5,319,31"/>
+<area shape="rect" id="node3" href="$group__group__bsp__pins__capsense.html" title="Pins connected to CAPSENSE™ sensors on the board." alt="" coords="198,55,283,80"/>
+</map>

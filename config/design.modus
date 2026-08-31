@@ -573,6 +573,35 @@
                         <Param id="SbuOvpRetry" value="2"/>
                         <Param id="Bch" value="false"/>
                         <Param id="SinkSel" value="1"/>
+                        <Param id="SourceSel" value="1"/>
+                        <Param id="AppSrcId" value="2"/>
+                        <Param id="QCEnable" value="0"/>
+                        <Param id="QCType" value="0"/>
+                        <Param id="AFCEnable" value="0"/>
+                        <Param id="AFCSrcCnt" value="1"/>
+                        <Param id="AFCVol0" value="0"/>
+                        <Param id="AFCCur0" value="0"/>
+                        <Param id="AFCVol1" value="0"/>
+                        <Param id="AFCCur1" value="0"/>
+                        <Param id="AFCVol2" value="0"/>
+                        <Param id="AFCCur2" value="0"/>
+                        <Param id="AFCVol3" value="0"/>
+                        <Param id="AFCCur3" value="0"/>
+                        <Param id="Bch1" value="false"/>
+                        <Param id="SourceSel1" value="1"/>
+                        <Param id="App1SrcId" value="2"/>
+                        <Param id="QC1Enable" value="0"/>
+                        <Param id="QC1Type" value="0"/>
+                        <Param id="AFC1Enable" value="0"/>
+                        <Param id="AFC1SrcCnt" value="1"/>
+                        <Param id="AFC1Vol0" value="0"/>
+                        <Param id="AFC1Cur0" value="0"/>
+                        <Param id="AFC1Vol1" value="0"/>
+                        <Param id="AFC1Cur1" value="0"/>
+                        <Param id="AFC1Vol2" value="0"/>
+                        <Param id="AFC1Cur2" value="0"/>
+                        <Param id="AFC1Vol3" value="0"/>
+                        <Param id="AFC1Cur3" value="0"/>
                         <Param id="inFlash" value="true"/>
                     </Personality>
                 </Block>
@@ -637,6 +666,35 @@
                         <Param id="SbuOvpRetry" value="2"/>
                         <Param id="Bch" value="false"/>
                         <Param id="SinkSel" value="1"/>
+                        <Param id="SourceSel" value="1"/>
+                        <Param id="AppSrcId" value="2"/>
+                        <Param id="QCEnable" value="0"/>
+                        <Param id="QCType" value="0"/>
+                        <Param id="AFCEnable" value="0"/>
+                        <Param id="AFCSrcCnt" value="1"/>
+                        <Param id="AFCVol0" value="0"/>
+                        <Param id="AFCCur0" value="0"/>
+                        <Param id="AFCVol1" value="0"/>
+                        <Param id="AFCCur1" value="0"/>
+                        <Param id="AFCVol2" value="0"/>
+                        <Param id="AFCCur2" value="0"/>
+                        <Param id="AFCVol3" value="0"/>
+                        <Param id="AFCCur3" value="0"/>
+                        <Param id="Bch1" value="false"/>
+                        <Param id="SourceSel1" value="1"/>
+                        <Param id="App1SrcId" value="2"/>
+                        <Param id="QC1Enable" value="0"/>
+                        <Param id="QC1Type" value="0"/>
+                        <Param id="AFC1Enable" value="0"/>
+                        <Param id="AFC1SrcCnt" value="1"/>
+                        <Param id="AFC1Vol0" value="0"/>
+                        <Param id="AFC1Cur0" value="0"/>
+                        <Param id="AFC1Vol1" value="0"/>
+                        <Param id="AFC1Cur1" value="0"/>
+                        <Param id="AFC1Vol2" value="0"/>
+                        <Param id="AFC1Cur2" value="0"/>
+                        <Param id="AFC1Vol3" value="0"/>
+                        <Param id="AFC1Cur3" value="0"/>
                         <Param id="inFlash" value="true"/>
                     </Personality>
                 </Block>

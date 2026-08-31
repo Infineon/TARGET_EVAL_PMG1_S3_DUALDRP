@@ -6,8 +6,8 @@
 #
 ################################################################################
 # \copyright
-# Copyright 2023 Cypress Semiconductor Corporation (an Infineon company) or
-# an affiliate of Cypress Semiconductor Corporation
+# Copyright (c) 2023-2026 Infineon Technologies AG
+# an affiliate of Infineon Technologies AG
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -47,6 +47,7 @@ DEVICE_COMPONENTS:=CAT2 CCG PMG1S3
 DEVICE_CYPM1321-97BZXIT_CORES:=CORE_NAME_CM0P_0
 DEVICE_CYPM1321-97BZXIT_DIE:=PMG1S3
 DEVICE_CYPM1321-97BZXIT_FLASH_KB:=256
+DEVICE_CYPM1321-97BZXIT_IPBLOCKS:=CCGFEATURES CCGFEATURES_V1 M0S8CPUSSV3_VER5_S8 M0S8CPUSSV3_VER5_S8_V5 M0S8CRYPTOLITE M0S8CRYPTOLITE_V1 M0S8CSDV2_VER2 M0S8CSDV2_VER2_V2 M0S8IOSS M0S8IOSS_V1 M0S8LPCOMP_VER2 M0S8LPCOMP_VER2_V2 M0S8PASS4A_VER2 M0S8PASS4A_VER2_V2 M0S8PERI M0S8PERI_V1 M0S8SCB_VER2 M0S8SCB_VER2_V2 M0S8TCPWM_VER2 M0S8TCPWM_VER2_V2 M0S8USBDSS_VER2 M0S8USBDSS_VER2_V2 MXUSBPD_S8 MXUSBPD_S8_V1 S8SRSSLT S8SRSSLT_V1
 DEVICE_CYPM1321-97BZXIT_SRAM_KB:=32
 DEVICE_LIST:=CYPM1321-97BZXIT
 DEVICE_TOOL_IDS:=bsp-assistant capsense-configurator capsense-tuner device-configurator dfuh-tool ez-pd-configurator library-manager lin-configurator project-creator usbdev-configurator
